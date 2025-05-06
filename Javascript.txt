@@ -1,0 +1,100 @@
+Apa itu Javascript?
+
+Secara definisi javaScript adalah bahasa pemrograman utnuk web yang digunakan untuk membuat halaman web menjadi interaktif.
+
+secara Fungsi javaScript memiliki tugas utama.
+
+ 1. Dinamis     : Memungkinkan perubahan konten halaman tanpa memuat ulang.
+ 2. Interaktif  : Digunakan untuk menangani event, animasi, dan validasi form.
+ 3. Versatil    : Dapat digunakan di front-end dan back-end ( Node.js ).  
+
+
+Sejarah & Evolusi javaScript 
+
+ 1. Diciptakan oleh Brendan Eich pada tahun 1995.
+ 2. Awalnya disebut "Mocha" kemudian "LiveScript" dan akhrinya "JavaScript"
+ 3. 1996 : JavaScript diadopsi oleh Netscape Navigator dan internet Explorer.
+ 4. 1997 : ECMAScript diciptakan sebagai standar JavaScript.
+ 5. Evolusi ECMAScript ( ES5 pada 2009, ES6 pada 2015 dan fitur baru seperti arrow functions, promises, dan lainnya ).
+ 6. Munculnya framework dan library seperti React, Angular, dan Vue.js.
+ 7. Node.js memungkinkan JavaScript digunakan di sisi server. 
+
+ 
+Cara Kerja JavaScript di Browser 
+
+Setiap browser memiliki mesin javaScript ( contoh : V8 di Chrome, SpiderMonkey di Firefox ).
+
+Mesin ini yang mengeksekusi kode JavaScript dan berinteraksi dengan DOM ( Document Object Model ).
+
+
+Langkah Kerja JavaScript : 
+
+ 1. Parsing    : Browser membaca HTML dan membentuk DOM ( Document Object Model ).
+ 2. Eksekusi   : Mesin JavaSctipt mengeksekusi kode JavaScript sesuai urutan, berinteraksi dengan DOM untuk manipulasi elemen.
+ 3. Event Loop : JavaScript menangani event secara asinkron melalui event loop, memungkinkan interaksi dinamis tanpa memblokir eksekusi kode lainnya.
+
+Contoh sederhananya : Bagaimana script sederhana di HTML dapat mengubah konten atau gaya elemen di halaman web.
+
+ ASINKRON 
+
+ Dalam JavaScript, asinkron adalah cara menangani operasi yang tidak langsung selesai, seperti mengambil data dari server, membaca file, atau menunggu respons dari API. JavaScript menggunakan model I/O non-Pemblokiran, yang memungkinkan eksekusi kode tetap berjalan tanpa harus menunggu operasi selesai.
+
+ Konsep Dasar Asinkron dalam JavaScript
+
+ JavaScript adalah bahasa pemrograman SINGLE-THREADED, yang berarti ia menjalankan satu tugas dalam satu waktu. Namun, dengan mekanisme asinkron, JavaScript dapat menangani operasi yang memerlukan waktu tanpa menghentikan eksekusi kode lainnya.
+
+ Cara Kerja Asinkron dalam JavaScript 
+
+  1. Event Loop dan Call Stack
+  JavaScript menggunakan event loop untuk menangani operasi asinkron. ketika ada tugas asinkron seperti setTimeOut() atau fetch(), JavaScript menambahkannya ke TASK QUEU dan melanjutkan eksekusi kode lainnya. Setelah operasi selesai, EVENT LOOP akan mengembalikannya ke CALL STACK utuk diproses lebih lanjut.
+  
+  2. CALLBACK
+  Callback adalah fungsi yang dipanggil setelah operasi asinkron selesai.
+  Contohnya : 
+
+  setTimeout(() => {
+    console.log("Halo, ini dari callback!");
+  }, 2000);
+
+  Namun, penggunaan callback secara berlebihan dapat menyebabkan CALLBACK HELL, yaitu kode yang sulit dibaca dan dikelola.
+
+  3. PROMISE 
+  Promise adalah objek yang mewakili hasil dari operasi asinkron. 
+  Contohnya :
+
+  let fetchData = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Data berhasil diambil");
+    }, 2000);
+  });
+
+  fetchData.then(data => console.log(data));
+
+  Dengan .then() kita dapat menangani hasil dari Promise tanpa harus menggunakan callback bersarang.
+
+  4. ASYNC/AWAIT
+  Async/Await adalah cara modern untuk menangani operasi asinkron dengan lebih mudah dibaca dan menyerupai kode sinkron. 
+  Contohnya :
+
+  async function fetchData() {
+    let response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+    let data = await response.json();
+    console.log(data);
+  }
+
+  fetchData();
+
+  Dengan await, eksekusi kode akan menunggu hasil dari Promise tanpa menggunakan .then()
+
+
+Kesimpulan 
+
+Asinkron dalam JavaScript memungkinkan eksekusi kode tetap berjalan tanpa harus menunggu operasi selesai. Dengan memahami EVENT LOOP, CALLBACK, PROMISE, dan ASYNC/AWAIT, kita dapat menulis kode yang lebih efesien dan mudah dikelola.
+
+Rangkuman 
+
+JavaScript adalah bahasa pemrograman esensial untuk web.
+Memiliki sejarah yang kaya dan terus berkembang.
+Memungkinkan pengembang halaman web interaktif dan dinamis.
+
+
