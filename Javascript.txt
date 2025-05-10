@@ -98,3 +98,18 @@ Memiliki sejarah yang kaya dan terus berkembang.
 Memungkinkan pengembang halaman web interaktif dan dinamis.
 
 
+
+
+VARIABEL JavaScript
+
+Apa itu Variabel?
+
+- Variabel adalah wadah yang digunakan untuk menyimpan data yang dapat berubah sepanjang program berjalan.
+- Analogi : Variabel seperti kotak yang menyimpan nilai, dan kita bisa mengganti isi kotak tersebut kapan saja.
+- Variabel di JavaScript itu ada 3 yaitu, Var, Let, Const.
+
+Kenapa ada Var Let Const?
+
+Karena ada kondisi dimana penggunaan Var Let Const pada waktu tertentu.
+
+
