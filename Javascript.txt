@@ -113,3 +113,27 @@ Kenapa ada Var Let Const?
 Karena ada kondisi dimana penggunaan Var Let Const pada waktu tertentu.
 
 
+
+TIPE DATA DI JAVASCRIPT 
+
+Didalam javascript data di kelompokkan dalam 2 tipe
+
+1. Tipe Data Primitif 
+
+  - STRING     : Urutan karakter yang digunakan untuk menyimpan dan memanipulasi teks.
+
+    `` backtik dapat digunakan utnuk mengambil variabel dengan cara menggunakan sign ${nama variabel}
+
+  - NUMBER     : Digunakan untuk menyimpan nilai numerik, termasuk bilangan bulat ( integer ) dan desimal ( float ).
+  - BOOLEAN    : Hanya memiliki dua nilai : true atau false.
+  - UNDEFINED  : Nilai yang secara otomatis diberikan kepada variabel yang belum dideklarasikan atau belum diinisialisasi.
+  - NULL       : Nilai yang secara eksplisit diberikan untuk menunjukkan bahwa variabel tidak memiliki nilai.
+  - SYMBOL ES6 : Symbol adalah tipe data primitif yang unik dan immutable, digunakan sebagai identifier unik untuk properti objek.
+  - BIGINT     : Adalah tipe data yang digunakan untuk merepresentasikan angka yang sangat besar melebihi batas tipe data Number.
+
+2. Tipe Data Reference 
+
+  - OBJECT    : Adalah tipe data kompleks yang digunakan untuk menyimpan koleksi data dalam pasangan key - value.
+  - ARRAY     : Adalah jenis Object yang menyimpan koleksi data berurutan dan dapat diakses melalui indkes.
+  - FUNCTION  : Adalah blok kode yang dapat digunakan kembali, yang juga dianggap sebagai Object di JavaScript.
+
