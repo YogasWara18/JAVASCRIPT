@@ -137,3 +137,11 @@ Didalam javascript data di kelompokkan dalam 2 tipe
   - ARRAY     : Adalah jenis Object yang menyimpan koleksi data berurutan dan dapat diakses melalui indkes.
   - FUNCTION  : Adalah blok kode yang dapat digunakan kembali, yang juga dianggap sebagai Object di JavaScript.
 
+Semua tipe data reference ini adalah object 
+
+Perbedaan Utama Tipe Data Primitive & Tipe Data Reference
+
+  - Penyimpanan : Tipe data primitif disimpan di stack memory dengan nilai langsunggnya, sedangkan Tipe data Reference disimpan di heap memory dan variabel hanya menyimpan referensi ke data tersebut.
+  - Perubahan Nilai : Pada tipe data primitif, mengubah nilai variabel tidak mempengaruhi variabel lain yang menyimpan salinan nilai tersebut. Sedangkan pada reference types, mengubah data melalui satu variabel akan mempengaruhi variabel lain yang merujuk ke objek yang sama.
+  - Kinerja : Operasi pada tipe data primitif biasanya lebih cepat dan menggunakan lebih sedikit memori dibandingkan reference types karena penyimpanan dan akses langsung ke nilai.
+  

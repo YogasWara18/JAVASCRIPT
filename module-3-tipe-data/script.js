@@ -1,4 +1,4 @@
-// TIPE DATA PRIMITIF
+// TIPE DATA PRIMITIVE
 
 // Tipe Data STRING 
 const nama = 'Ranggo'
@@ -32,7 +32,7 @@ console.log(x, typeof x)
 const person = null 
 
 console.log(person, typeof person)
-// Tipe data null adalah tipe data yang bernilai kosong
+// Tipe data null adalah tipe data yang variabelnya bernilai kosong
 
 // Tipe Data SYMBOL
 const symbol1 = Symbol("description 1")
@@ -51,4 +51,34 @@ console.log(bigInt, typeof bigInt)
 // TIPE DATA REFERENCE
 
 
-// Tipe Data OBJECT 
+// Tipe Data OBJECT
+// Tipe data object harus menggunakan kurung kurawal {} 
+const orang = {
+    nama: "Ranggo",
+    umur: 27,
+    negara: "Indonesia",
+}
+
+console.log(orang, typeof orang)
+
+// Tipe Data ARRAY 
+// Tipe data array harus menggunakan kurung siku [], dan untuk memisahkan data value ( nilainya ) harus menggunakan , 
+const hobby = ["Basket", "Catur", "1", "satu1"]
+
+console.log(hobby, typeof hobby)
+
+
+// Tipe Data FUNCTION
+// {} Untuk mengeksekusi code yg menggunakan function
+// Tips cara memanggil function harus lengkap nama variabel dan () 
+function sayHello(){
+    return "Hello from kenapa coding"
+}
+
+console.log(sayHello(), typeof sayHello())
+
+
+
+/* PERBEDAAN TIPE DATA PRIMITIVE & TIPE DATA REFERENCE */
+
+
