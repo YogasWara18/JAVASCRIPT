@@ -12,7 +12,8 @@ let result2 = "5" - 10
 console.log(result2, typeof result2) // Output : -5 number
 // "5" dikonversi menjadi angka 5 (number), sehingga operasi pengurangan dapat dilakukan. dan menjadi hasil -5 number
 
-// (*)
-let result3 = "5" * 10
-console.log(result3, typeof result3)
-
+// Boolean Coercion 
+// Saat digunakan dlam kondisi logika, JavaScript dapat mengonversi nilai menjadi TRUE atau FALSE secara otomatis :
+let bool1 = "Hello"
+console.log(Boolean("Hello")); // Output : true
+console.log(Boolean(0)); // Output : false
