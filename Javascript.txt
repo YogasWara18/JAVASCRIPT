@@ -134,7 +134,7 @@ Didalam javascript data di kelompokkan dalam 2 tipe
 2. Tipe Data Reference 
 
   - OBJECT    : Adalah tipe data kompleks yang digunakan untuk menyimpan koleksi data dalam pasangan key - value.
-  - ARRAY     : Adalah jenis Object yang menyimpan koleksi data berurutan dan dapat diakses melalui indkes.
+  - ARRAY     : Adalah jenis Object yang menyimpan koleksi data berurutan dan dapat diakses melalui indeks.
   - FUNCTION  : Adalah blok kode yang dapat digunakan kembali, yang juga dianggap sebagai Object di JavaScript.
 
 Semua tipe data reference ini adalah object 
@@ -175,7 +175,7 @@ jika ingin menghindari TYPE COERCION dalam perbandingan, gunakan STRICT EQUALITY
 
 console.log(0 === false); // Output: false
 
-Implicit conversion bisa sangat berguna, tapi perlu diperhatikan agar tidak menyebabkan kesalahan dlam logika program.
+Implicit conversion bisa sangat berguna, tapi perlu diperhatikan agar tidak menyebabkan kesalahan dalam logika program.
 
 
 "FALSY VALUE" 
@@ -232,3 +232,75 @@ if (!user) {
 // Output: "User tidak valid!"
 
 Jika kita hanya ingin mengecek apakah sebuah variabel benar - benar kosong, ada baiknya menggunakan metode eksplisit seperti user.length === 0.
+
+
+" TRUTHY VALUE "
+
+Dalam JavaScript, konsep truthy value sangat penting karena menentukan bagaimana nilai tertentu diperlukan dalam ekspresi logika atau kondisi. JavaScript adalah bahasa yang secara otomatis melakukan konversi tipe data ( coercion ), sehingga nilai yang bukan tipe BOOLEAN tetap dapat digunakan dalam evaluasi logika.
+
+- APA ITU TRUTHY VALUE?
+
+Truthy value adalah nilai yang dievaluasi sebagai TRUE dalam konteks BOOLEAN, meskipun bukan benar - benar TRUE dalam tipe datanya. Ini memungkinkan kita untuk menggunakan berbagai tipe data dalam kondisi tanpa harus selalu membandingkannya secara eksplisit dengan TRUE.
+Sebaliknya, nilai yang dievaluasi sebagai false disebut FALSY VALUE.
+
+- DAFTAR TRUTHY & FALSY VALUE DI JAVASCRIPT 
+  Berikut adalah daftar umum dari nilai TRUTHY dan FALSY dalam JavaScript :
+
+- TRUTHY ( DIANGGAP SEBAGAI 'TRUE' )
+  Setiap nilai yang bukan Falsy secara otomatis dianggap TRUTHY, termasuk :
+
+- String non - kosong, misalnya -> "hello", "0", "false"
+- Angka bukan nol, misalnya -> 1, -5, 3.14
+- Array kosong -> []
+- Objek kosong -> {}
+- Function atau Symbol -> function(){}, Symbol('test')
+- Set dan Map -> newSet(), newMap()
+- Boolean true -> true
+- Infinity & -infinity -> infinity, -infinity
+
+- CONTOH PENGGUNAAN TRUTHY & FALSY DALAM JAVASCRIPT
+
+1. MENGGUNAKAN if STATEMENT
+  Kita bisa menggunakan TRUTHY VALUE dalam kondisi tanps membandingkannya secara eksplisit dengan TRUE :
+  
+  let username = "Alice";
+
+  if (username) {
+    console.log("User sudah memiliki nama.");
+  } else {
+    console.log("User belum mengisi nama.");
+  }
+
+  "Karena 'Alice' adalah string non - kosong, maka dianggap TRUTHY, sehingga kode di dalam blok if dieksekusi."
+
+2. MENGGUNAKAN OPERATOR LOGIKA || (OR)
+  TRUTHY VALUE sering digunakan untuk menetapkan nilai default :
+
+  let userInput = "";                       // String kosong adalah falsy
+  let defaultName = userInput || "Guest";
+
+  console.log(defaultName);                 // Output: "Guest"
+
+  "Karena userInput bernilai falsy (string kosong), maka "Guest" digunakan sebagai nilai pengganti."
+
+3. MENGGUNAKAN OPERATOR && (AND)
+  TRUTHY VALUE juga berguna untuk memeriksa apakah kedua kondisi terpenuhi : 
+
+  let isLoggedIn = true;
+  let userRole = "admin";
+
+  if (isLoggedIn && userRole === "admin") {
+    console.log("Akses penuh diberikan.");
+  } else {
+    console.log("Akses terbatas.");
+  }
+
+  "Karena isLoggedIn bernilai TRUTHY (true), dan userRole === "admin" juga true, maka pesan "Akses penuh diberikan.""
+
+
+  "KESIMPULAN"
+  Konsep TRUTHY & FALSY sangat penting dalam JavaScript karena : 
+
+  1. Mempermudah evaluasi kondisi tanpa perlu perbandingan eksplisit dengan true atau false.
+  2. Memungkinkan penggunaan nilai default menggunakan operator ||.
+  3. Mengoptimalkan logika kode dengan operator &&.

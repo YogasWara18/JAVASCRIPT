@@ -17,3 +17,21 @@ console.log(result2, typeof result2) // Output : -5 number
 let bool1 = "Hello"
 console.log(Boolean("Hello")); // Output : true
 console.log(Boolean(0)); // Output : false
+
+
+
+
+// EKSPLISIT CONVERSION 
+// Yaitu seorang programmer yang mengatur dengan caranya agar dapat mengubah dan mengonversi tipe data
+
+// Cara mengonversi number ke string 1
+let num = 100     // mendeklarasi Variabel num bernilai 100 number
+
+let string = String(num)    // Cara mengonversi number 100 menjadi string 
+console.log(string, typeof string)  // Output: 100 string
+
+// Cara mengonversi number ke string 2 
+let num1 = 200
+
+let string1 = num1.toString()
+console.log(string1, typeof string1)
