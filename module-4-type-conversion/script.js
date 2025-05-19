@@ -33,5 +33,12 @@ console.log(string, typeof string)  // Output: 100 string
 // Cara mengonversi number ke string 2 
 let num1 = 200
 
-let string1 = num1.toString()
-console.log(string1, typeof string1)
+let string1 = num1.toString()      // Cara mengubah number 200 menjadi string
+console.log(string1, typeof string1) // Output: 200 string
+
+
+// Cara mengonversi string menjadi number 
+let stringg = "100"
+
+let num2 = parseInt(stringg)   // Cara mengubah string ke number dengan menggunakan varibael 'parseInt()'
+console.log(num2, typeof num2)  // Output = 100 number
