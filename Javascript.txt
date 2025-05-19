@@ -158,7 +158,7 @@ Perbedaan Utama Tipe Data Primitive & Tipe Data Reference
   - EXPLICIT CONVERSION adalah konversi tipe data yang dilakukan secara eksplisit oleh programmer menggunakan metode atau fungsi tertentu.
 
 
-"Implicit Conversion" 
+"IMPLICIT CORVERSION" 
 
 Dalam JavaScript, Implicit corversion atau yang dikenal sebagai TYPE COERCION, terjadi ketika JavaScript secara otomatis mengubah tipe data dalam suatu operasi. Hal ini dilakukan agar ekspresi dapat dievaluasi tanpa harus secara eksplisit mengonversi tipe data.
 
@@ -177,6 +177,89 @@ console.log(0 === false); // Output: false
 
 Implicit conversion bisa sangat berguna, tapi perlu diperhatikan agar tidak menyebabkan kesalahan dalam logika program.
 
+
+"EKSPLISIT CONVERSION"
+
+Dalam JavaScript, konversi adalah proses mengubah tipe data dari satu bentuk ke bentuk lainnya. Konversi ini bisa terjadi secara Implisit ( Otomatis ) atau Eksplisit ( Dengan perintah langsung dari programmer ). Berikut adalah penjelasan detail dan contoh eksplisit untuk berbagai jenis konversi dalam javaScript.
+
+1. KONVERSI STRING KE NUMBER 
+  Konversi ini dilakukan ketika kita ingin mengubah teks ( string ) menjadi angka.
+
+  Contoh Eksplisit :
+ 
+  let str1 = "123";
+  let num1 = Number(str1);    // Menggunakan fungsi Number()
+  console.log(num1);          // Output: 123 number
+ 
+  let str2 = "45.67";
+  let num2 = parseFloat(str2) // Menggunakan parseFloat()
+  console.log(num2)           // Output: 45.67 number
+
+  let str3 = "200"
+  let num3 = parseInt(str3);  // Menggunakan parseInt()
+  console.log(num3);          // Output: 200 number
+
+  Catatan : Jika string tidak mengandung angka yang valid, hasilnya akan NaN ( Not a Number ).
+
+2. KONVERSI NUMBER KE STRING 
+  Mengubah angka menjadi teks untuk keperluan seperti tampilan UI atau pengolahan data.
+
+  Contoh Eksplisit :
+
+  let num = 456;
+  let strNum = String(num);           // Menggunakan String()
+  console.log(strNum);                // Output: "456" string
+
+  let anotherStr = num.toString();    // Menggunakan .toString()
+  console.log(anotherStr);            // Output: "456"
+
+3. KONVERSI BOOLEAN KE NUMBER
+  Konversi nilai TRUE atau FALSE menjadi angka.
+
+  Contoh Eksplisit : 
+
+  console.log(Number(true));      // Output: 1
+  console.log(Number(false));     // Output: 0
+
+4. KONVERSI NUMBER KE BOOLEAN 
+  Mengubah angka menjadi nilai boolean untuk logika pemrograman.
+
+  Contoh Eksplisit :
+
+  console.log(Boolean(1));      // Output: true
+  console.log(Boolean(0));      // Output: false 
+  console.log(Boolean(100));    // Output: true ( Angka selain 0 adalah true ) 
+  console.log(Boolean(-5));     // Output: true ( Angka negatif juga dianggap true )
+
+5. KONVERSI STRING KE BOOLEAN 
+  Mengubah teks menjadi boolean.
+
+  Contoh Eksplisit : 
+
+  console.log(Boolean("Hello")); // Output: true ( String non-kosong dianggap true )
+  console.log(Boolean(""));      // Output: false ( String kosong dianggap false )
+
+6. KONVERSI OBJECT KE STRING ATAU NUMBER
+  JavaScript otomatis memanggil metode .toString() atau valueOf() pada objek saat diperlukan.
+
+  Contoh Eksplisit :
+
+  let obj = { name: "Yogas", age: 25 };
+  console.log(String(obj));                 // Output: "[object Object]"
+
+  let data = new Date();
+  console.log(Number(date));                // Output: Waktu dalam bentuk timestamp ( jumlah milidetik sejak 1970 )
+
+7. KONVERSI OTOMATIS ( TYPE COERCION )
+  JavaScript terkadang secara otomatis mengonversi tipe data saat melakukan operasi 
+
+  Contoh Eksplisit : 
+
+  console.log("5" + 3);         // Output: "53" ( Otomatis mengubah angka menjadi string )
+  console.log("5" - 3);         // Output: 2 ( Otomatis mengubah string menjadi angka )
+  console.log(true + false);    // Output: 1 ( true = 1, false = 0 )
+
+  Konversi sangat penting dalam javaScript, terutama saat menangani data dari berbagai sumber.
 
 "FALSY VALUE" 
 
