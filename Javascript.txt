@@ -387,3 +387,26 @@ Sebaliknya, nilai yang dievaluasi sebagai false disebut FALSY VALUE.
   1. Mempermudah evaluasi kondisi tanpa perlu perbandingan eksplisit dengan true atau false.
   2. Memungkinkan penggunaan nilai default menggunakan operator ||.
   3. Mengoptimalkan logika kode dengan operator &&.
+
+
+
+  " OPERATOR "
+
+  APA ITU OPERATOR 
+  - Operator adalah simbol atau kata kunci yang digunakan untuk melakukan operasi pada satu atau lebih operand ( nilai atau variabel ).
+  - Contoh umum termasuk penjumlahan, pengurangan, dan penggabungan string itu bisa dibilang sebagai operasi.
+
+  JENIS-JENIS OPERATOR DI JAVASCRIPT
+  - Operator Aritmatika
+  - Operator Assignment
+  - Operator Perbandingan 
+  - Operator Logika 
+  - Operator Ternary 
+
+  " OPERATOR ARITMATIKA "
+    Digunakan untuk melakukan operasi matematika
+
+    - + ( Penjumlahan )         - % ( Modulus: sisa bagi )
+    - - ( Pengurangan )         - ** ( Eksponen: Pangkat )
+    - * ( Perkalian )           - ++ ( Increment: Menambahkan satu nilai )
+    - / ( Pembagian )           - -- ( Decrement: Mengurangi satu nilai )
