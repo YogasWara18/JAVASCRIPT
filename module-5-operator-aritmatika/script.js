@@ -31,6 +31,6 @@ console.log(bagi, typeof bagi)  // Output : 20 number, Tipe data mengikuti dari 
 // % ( Modulus: Sisa bagi )
 let t = 23
 let r = 3 
-let modulus = t % r         // Operator Modulus:sisa bagi ( % ) dilakukan pada
+let modulus = t % r         // Operator Modulus:sisa bagi ( % ) dilakukan menghitung sisa bagi 
 
-console.log(modulus, typeof modulus)
+console.log(modulus, typeof modulus) // Output: 2 number, Tipe data mengikuti dari value ( nilai ) dari variabel.
