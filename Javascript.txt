@@ -404,9 +404,19 @@ Sebaliknya, nilai yang dievaluasi sebagai false disebut FALSY VALUE.
   - Operator Ternary 
 
   " OPERATOR ARITMATIKA "
-    Digunakan untuk melakukan operasi matematika
+    Digunakan untuk melakukan operasi matematika.
 
     - + ( Penjumlahan )         - % ( Modulus: sisa bagi )
     - - ( Pengurangan )         - ** ( Eksponen: Pangkat )
     - * ( Perkalian )           - ++ ( Increment: Menambahkan satu nilai )
     - / ( Pembagian )           - -- ( Decrement: Mengurangi satu nilai )
+
+  " OPERATOR ASSIGMENT "
+    Digunakan untuk menetapkan nilai ke variabel.
+
+    - = ( Assignment dasar )
+    - += ( Penjumlahan dan assignment )
+    - -= ( Pengurangan dan assignment )
+    - *= ( Perkalian dan assigment )
+    - /= ( Pembagian dan assigment )
+    - %= ( Modulus dan assignment )
