@@ -443,3 +443,14 @@ Sebaliknya, nilai yang dievaluasi sebagai false disebut FALSY VALUE.
       JavaScript mendukung operator bitwise assignment, yang bekerja pada tingkat biner :
 
       let b = 5;    // 
+  
+
+  " Operator Perbandingan [ Comparison ]
+    Digunakan untuk membandingkan dua nilai.
+    Menghasilkan nilai Boolean ( true atau false )
+
+    - == ( Sama dengan, mengecek nilai )                               - > ( Lebih besar dari )
+    - === ( Sama dengan secara ketat, mengecek nilai dan tipe data )   - < ( Lebih kecil dari )
+    - != ( Tidak sama dengan )                                         - >= ( Lebih besar atau sama dengan )
+    - !== ( Tidak sama dengan secara ketat )                           - <= ( Lebih kecil atau sama dengan )
+  

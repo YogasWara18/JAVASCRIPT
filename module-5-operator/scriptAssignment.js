@@ -28,3 +28,9 @@ let b = 20          // Mendeklarasikan value ( nilai ) b = 20
 b /= 2              // /= ( Operator ), value ( nilai ) b = 20 dibagi ( /= ) dengan value ( nilai ) 2 menjadi = 10 
 
 console.log(b, typeof b)  // Ouput: 10 Number.
+
+// %= ( Assignment modulus )
+let m = 13          // Mendeklarasikan value ( nilai ) m = 13
+m %= 3              // %= ( Operator ), value ( nilai ) m = 13 modulus: sisa bagi ( %= ) dengan value ( nilai ) 3 menjadi = 1 
+
+console.log(m, typeof m)  // Output: 1 Number.
