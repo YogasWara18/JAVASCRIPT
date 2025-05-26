@@ -420,3 +420,26 @@ Sebaliknya, nilai yang dievaluasi sebagai false disebut FALSY VALUE.
     - *= ( Perkalian dan assigment )
     - /= ( Pembagian dan assigment )
     - %= ( Modulus dan assignment )
+
+    " Operator Assignment Dasar "
+      Operator assignment digunakan untuk menetapkan nilai ke varibel. Contoh dasarnya :
+      
+      let x = 10; // Menetapkan nilai 10 ke varibel x 
+
+      Artinya, variabel x sekarang meyimpan nilai 10.
+
+    " Operator Assignment Gabungan "
+      Selain =, ada operator gabungan yang mengkombinasikan operasi matematika dengan assignment:
+
+      let a = 5;
+      a += 3;       // Sama dengan a = a + 3 ( nilai a sekarang 8, karna ditambahkan 5 dengan variabel a pertama bernilai 5 )
+      a -= 2;       // Sama degnan a = a - 2 ( nilai a sekarang 6, karna pengurangannya berasal dari perhitungan nilai yang terakhir di operasikan ( 8 - 2 ) )
+      a *= 4;       // Sama dengan a = a * 4 ( nilai a sekarang 24, karna perkaliannya berasal dari perhitungan nilai yang terakhir di operasikan ( 6 * 4 ) )
+      a /= 2;       // Sama dengan a = a / 2 ( nilai a sekarang 12, karna perhitungannya berasal dari perhitungan nilai yang terakhir di operasikan ( 24 / 12) )
+
+     Ini membantu membuat kode lebih ringkas dan mudah dibaca.
+
+    " Operator Assignment Bitwise "
+      JavaScript mendukung operator bitwise assignment, yang bekerja pada tingkat biner :
+
+      let b = 5;    // 
