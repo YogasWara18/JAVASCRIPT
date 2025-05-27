@@ -25,8 +25,8 @@ console.log(e != f) // Output: false, karna value ( nilai ) nya sama. Sedangkan 
 /* Namun perlu diperhatikan bahwa != melakukan PERBANDINGAN TANPA MEMPERTIMBANGKAN TIPE DATA. Artinya, jika kamu membandingkan angka dengan string yang memiliki nilai angka yang sama, hasilnya akan FALSE.*/
 
 // !== ( Operator Strict Inequality ) ( Mengecek atau membandingkan ketidaksamaan nilai dan tipe data variabel )
-let g = "5"     // String "5"
-let h = false   // Boolean 
+let g = "5"  // String "5"
+let h = false   // Boolean false
 
 console.log(g !== h) // Output: true, karna oeprator !== diperuntukkanuntuk mengecek atau membandingkan ketidaksamaan nilai dan tipe data variabel.
 /* Membandingkan NILAI & TIPE DATA */
@@ -34,3 +34,16 @@ console.log(g !== h) // Output: true, karna oeprator !== diperuntukkanuntuk meng
 
 /* Jika ingin menghindari hasil yang tidak terduga akibat konversi otomatis JavaScript, lebih baik gunakan !== dibanfingkan !=. Dengan begitu, kamu bisa memastikan bahwa kedua nilai benar - benar berbeda baik dari sisi nilai maupun tipe data. */
 
+// > ( Mengecek apakah variabel satu lebih besar dari variabel lainnya )
+let i ="17"     // String "17"
+let j = 16      // Number 16
+
+console.log(i > j)     // Output: True, Karna nilai i string berubah menjadi number 17, dan nilai i lebih besar dari nilai j maka hasilnya True.
+/* Operator > digunakan untuk mebandingkan dua nilai dan menentukan apakah nilai di sebelah kiri lebih besar daripada nilai di sebelah kanan.*/
+/* Jika nilai kiri lebih besar, hasilnya True; jika tidak hasilnya False.*/
+
+// >= ( Mengecek apakah variabel satu lebih besar atau sama dari variabel lainnya )
+let k = 4
+let l = 3
+
+console.log(k >= l)
