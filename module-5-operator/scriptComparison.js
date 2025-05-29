@@ -43,7 +43,22 @@ console.log(i > j)     // Output: True, Karna nilai i string berubah menjadi num
 /* Jika nilai kiri lebih besar, hasilnya True; jika tidak hasilnya False.*/
 
 // >= ( Mengecek apakah variabel satu lebih besar atau sama dari variabel lainnya )
-let k = 4
+// Jika value ( nilai ) dari variabel lebih besar atau sama dengan maka hasilny TRUE, dan jika value ( nilai ) dari variabel lebih kecil maka hasilnya FALSE.
+let k = 3 
 let l = 3
 
-console.log(k >= l)
+console.log(k >= l) // Output: TRUE, karna Kedua value ( nilai ) dari varibel sama.
+
+// < ( Mengecek apakah variabel satu lebih kecil dari variabel lainnya )
+let m = 2
+let n = 3
+
+console.log(m < n) // Output: TRUE, karna nilai dari varibael m lebih kecil dari nilai varibel n, karna operator ini digunakan untuk meghitung bilangan yang lebih kecil.
+
+// <= ( Mengecek apakah variabel satu lebih kecil atau sama dengan degnan variabel lainnya )
+// jika value ( nilai ) dari variabel lebih kecil atau sama dengan akan bernilai TRUE, dan jika nilai dari variabel lebih besar dari variabel lainnnya maka hasilnya FALSE.
+let o = 4
+let p = 3
+
+console.log(o <= p) // Output: FALSE, Karna nilai daari varibael o lebih besar dari nilai variabel p, Operator inti digunakan untuk menghitung siapa yg lebih kecil atau sama dengan.
+
